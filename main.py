@@ -3,7 +3,7 @@ import openai #pip install openai
 import customtkinter as ctk #pip install customtkinter
 
 def generate():
-    prompt = "Por favor, crea 10 ideas para crear proyectos de data science. "
+    prompt = "Por favor, dame 10 ideas para crear proyectos de data science. "
     language = language_dropdown.get()
     prompt += "El lenguaje de programación es " + language + ". "
     difficulty = difficulty_value.get()
@@ -29,7 +29,7 @@ def generate():
 
 root = ctk.CTk()
 root.geometry("750x550")
-root.title("Data Science Idea Generator by ToekiousBIG")
+root.title("Data Science Idea Generator by jaimed411")
 
 ctk.set_appearance_mode("dark")
 
@@ -46,7 +46,7 @@ language_label = ctk.CTkLabel(
     language_frame, text="Lenguaje Programación", font=ctk.CTkFont(weight="bold"))
 language_label.pack()
 language_dropdown = ctk.CTkComboBox(
-    language_frame, values=["Python", "R", "Java", "MATLAB", "SQL"])
+    language_frame, values=["Python", "R", "Java", "C+"])
 language_dropdown.pack(pady=10)
 
 difficulty_frame = ctk.CTkFrame(frame)
