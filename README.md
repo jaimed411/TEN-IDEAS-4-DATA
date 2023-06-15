@@ -18,7 +18,8 @@ Si deseas ejecutar la API en tu propio entorno, sigue estos pasos:
 git clone https://github.com/jaimed411/DS-GENERATOR-CHATGPT-API.git
 
 2-Instala las dependencias:
-pip install -r requirements.txt
+pip install openai
+pip install customtkinter
 
 ## Contribuciones
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este proyecto, no dudes en abrir un problema o enviarme un mail.
